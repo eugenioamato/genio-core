@@ -1,12 +1,12 @@
 import torch
 
-from ltx_core.loader.sd_ops import SDOps
-from ltx_core.model.model_protocol import ModelConfigurator
-from ltx_core.model.transformer.attention import AttentionFunction
-from ltx_core.model.transformer.model import LTXModel, LTXModelType
-from ltx_core.model.transformer.rope import LTXRopeType
-from ltx_core.model.transformer.text_projection import create_caption_projection
-from ltx_core.utils import check_config_value
+from genio_core.loader.sd_ops import SDOps
+from genio_core.model.model_protocol import ModelConfigurator
+from genio_core.model.transformer.attention import AttentionFunction
+from genio_core.model.transformer.model import LTXModel, LTXModelType
+from genio_core.model.transformer.rope import LTXRopeType
+from genio_core.model.transformer.text_projection import create_caption_projection
+from genio_core.utils import check_config_value
 
 
 class LTXModelConfigurator(ModelConfigurator[LTXModel]):

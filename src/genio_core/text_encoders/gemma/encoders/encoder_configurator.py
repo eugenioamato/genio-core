@@ -3,18 +3,18 @@ from transformers import Gemma3Config
 from transformers.modeling_rope_utils import ROPE_INIT_FUNCTIONS
 from transformers.models.gemma3 import Gemma3ForConditionalGeneration
 
-from ltx_core.loader import KeyValueOperationResult
-from ltx_core.loader.module_ops import ModuleOps
-from ltx_core.loader.sd_ops import SDOps
-from ltx_core.model.model_protocol import ModelConfigurator
-from ltx_core.text_encoders.gemma.config import GEMMA3_CONFIG_FOR_LTX
-from ltx_core.text_encoders.gemma.embeddings_connector import (
+from genio_core.loader import KeyValueOperationResult
+from genio_core.loader.module_ops import ModuleOps
+from genio_core.loader.sd_ops import SDOps
+from genio_core.model.model_protocol import ModelConfigurator
+from genio_core.text_encoders.gemma.config import GEMMA3_CONFIG_FOR_LTX
+from genio_core.text_encoders.gemma.embeddings_connector import (
     AudioEmbeddings1DConnectorConfigurator,
     Embeddings1DConnectorConfigurator,
 )
-from ltx_core.text_encoders.gemma.embeddings_processor import EmbeddingsProcessor
-from ltx_core.text_encoders.gemma.encoders.base_encoder import GemmaTextEncoder
-from ltx_core.text_encoders.gemma.feature_extractor import (
+from genio_core.text_encoders.gemma.embeddings_processor import EmbeddingsProcessor
+from genio_core.text_encoders.gemma.encoders.base_encoder import GemmaTextEncoder
+from genio_core.text_encoders.gemma.feature_extractor import (
     FeatureExtractorV1,
     FeatureExtractorV2,
 )

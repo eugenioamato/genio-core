@@ -4,8 +4,8 @@ from typing import Optional, Tuple
 import einops
 import torch
 
-from ltx_core.components.protocols import Patchifier
-from ltx_core.types import AudioLatentShape, SpatioTemporalScaleFactors, VideoLatentShape
+from genio_core.components.protocols import Patchifier
+from genio_core.types import AudioLatentShape, SpatioTemporalScaleFactors, VideoLatentShape
 
 
 class VideoLatentPatchifier(Patchifier):

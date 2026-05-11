@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 
-from ltx_core.loader.module_ops import ModuleOps
-from ltx_core.loader.sd_ops import SDOps
-from ltx_core.quantization.fp8_cast import TRANSFORMER_LINEAR_DOWNCAST_MAP, UPCAST_DURING_INFERENCE
-from ltx_core.quantization.fp8_scaled_mm import FP8_PREPARE_MODULE_OPS, FP8_TRANSPOSE_SD_OPS
+from genio_core.loader.module_ops import ModuleOps
+from genio_core.loader.sd_ops import SDOps
+from genio_core.quantization.fp8_cast import TRANSFORMER_LINEAR_DOWNCAST_MAP, UPCAST_DURING_INFERENCE
+from genio_core.quantization.fp8_scaled_mm import FP8_PREPARE_MODULE_OPS, FP8_TRANSPOSE_SD_OPS
 
 
 @dataclass(frozen=True)

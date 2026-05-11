@@ -1,7 +1,7 @@
 import torch
 
-from ltx_core.components.protocols import DiffusionStepProtocol
-from ltx_core.utils import to_velocity
+from genio_core.components.protocols import DiffusionStepProtocol
+from genio_core.utils import to_velocity
 
 
 class EulerDiffusionStep(DiffusionStepProtocol):

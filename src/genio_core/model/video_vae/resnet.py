@@ -3,10 +3,10 @@ from typing import Optional, Tuple, Union
 import torch
 from torch import nn
 
-from ltx_core.model.common.normalization import PixelNorm
-from ltx_core.model.transformer.timestep_embedding import PixArtAlphaCombinedTimestepSizeEmbeddings
-from ltx_core.model.video_vae.convolution import make_conv_nd, make_linear_nd
-from ltx_core.model.video_vae.enums import NormLayerType, PaddingModeType
+from genio_core.model.common.normalization import PixelNorm
+from genio_core.model.transformer.timestep_embedding import PixArtAlphaCombinedTimestepSizeEmbeddings
+from genio_core.model.video_vae.convolution import make_conv_nd, make_linear_nd
+from genio_core.model.video_vae.enums import NormLayerType, PaddingModeType
 
 
 class ResnetBlock3D(nn.Module):

@@ -12,10 +12,10 @@ from dataclasses import dataclass, replace
 
 import torch
 
-from ltx_core.model.transformer.modality import Modality
-from ltx_core.tiling import Tile, TileCountConfig, create_tiles, identity_mapping_operation, split_by_count
-from ltx_core.tools import VideoLatentTools
-from ltx_core.types import VideoLatentShape
+from genio_core.model.transformer.modality import Modality
+from genio_core.tiling import Tile, TileCountConfig, create_tiles, identity_mapping_operation, split_by_count
+from genio_core.tools import VideoLatentTools
+from genio_core.types import VideoLatentShape
 
 
 @dataclass(frozen=True)

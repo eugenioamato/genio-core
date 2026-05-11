@@ -2,18 +2,18 @@ from enum import Enum
 
 import torch
 
-from ltx_core.guidance.perturbations import BatchedPerturbationConfig
-from ltx_core.model.transformer.adaln import AdaLayerNormSingle, adaln_embedding_coefficient
-from ltx_core.model.transformer.attention import AttentionCallable, AttentionFunction
-from ltx_core.model.transformer.modality import Modality
-from ltx_core.model.transformer.rope import LTXRopeType
-from ltx_core.model.transformer.transformer import BasicAVTransformerBlock, TransformerConfig
-from ltx_core.model.transformer.transformer_args import (
+from genio_core.guidance.perturbations import BatchedPerturbationConfig
+from genio_core.model.transformer.adaln import AdaLayerNormSingle, adaln_embedding_coefficient
+from genio_core.model.transformer.attention import AttentionCallable, AttentionFunction
+from genio_core.model.transformer.modality import Modality
+from genio_core.model.transformer.rope import LTXRopeType
+from genio_core.model.transformer.transformer import BasicAVTransformerBlock, TransformerConfig
+from genio_core.model.transformer.transformer_args import (
     MultiModalTransformerArgsPreprocessor,
     TransformerArgs,
     TransformerArgsPreprocessor,
 )
-from ltx_core.utils import to_denoised
+from genio_core.utils import to_denoised
 
 
 class LTXModelType(Enum):

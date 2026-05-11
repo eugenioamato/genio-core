@@ -1,15 +1,15 @@
 import torch
 
-from ltx_core.model.model_protocol import ModelConfigurator
-from ltx_core.model.transformer.attention import Attention
-from ltx_core.model.transformer.feed_forward import FeedForward
-from ltx_core.model.transformer.rope import (
+from genio_core.model.model_protocol import ModelConfigurator
+from genio_core.model.transformer.attention import Attention
+from genio_core.model.transformer.feed_forward import FeedForward
+from genio_core.model.transformer.rope import (
     LTXRopeType,
     generate_freq_grid_np,
     generate_freq_grid_pytorch,
     precompute_freqs_cis,
 )
-from ltx_core.utils import rms_norm
+from genio_core.utils import rms_norm
 
 
 class _BasicTransformerBlock1D(torch.nn.Module):

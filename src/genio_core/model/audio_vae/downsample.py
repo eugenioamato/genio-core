@@ -2,10 +2,10 @@ from typing import Set, Tuple
 
 import torch
 
-from ltx_core.model.audio_vae.attention import AttentionType, make_attn
-from ltx_core.model.audio_vae.causality_axis import CausalityAxis
-from ltx_core.model.audio_vae.resnet import ResnetBlock
-from ltx_core.model.common.normalization import NormType
+from genio_core.model.audio_vae.attention import AttentionType, make_attn
+from genio_core.model.audio_vae.causality_axis import CausalityAxis
+from genio_core.model.audio_vae.resnet import ResnetBlock
+from genio_core.model.common.normalization import NormType
 
 
 class Downsample(torch.nn.Module):

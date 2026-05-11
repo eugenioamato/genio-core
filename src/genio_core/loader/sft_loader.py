@@ -3,8 +3,8 @@ import json
 import safetensors
 import torch
 
-from ltx_core.loader.primitives import StateDict, StateDictLoader
-from ltx_core.loader.sd_ops import SDOps
+from genio_core.loader.primitives import StateDict, StateDictLoader
+from genio_core.loader.sd_ops import SDOps
 
 
 class SafetensorsStateDictLoader(StateDictLoader):

@@ -3,7 +3,7 @@ from typing import Protocol
 
 import torch
 
-from ltx_core.model.transformer.rope import LTXRopeType, apply_rotary_emb
+from genio_core.model.transformer.rope import LTXRopeType, apply_rotary_emb
 
 memory_efficient_attention = None
 flash_attn_interface = None

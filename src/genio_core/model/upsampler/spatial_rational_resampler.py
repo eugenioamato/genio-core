@@ -3,8 +3,8 @@ from typing import Tuple
 import torch
 from einops import rearrange
 
-from ltx_core.model.upsampler.blur_downsample import BlurDownsample
-from ltx_core.model.upsampler.pixel_shuffle import PixelShuffleND
+from genio_core.model.upsampler.blur_downsample import BlurDownsample
+from genio_core.model.upsampler.pixel_shuffle import PixelShuffleND
 
 
 def _rational_for_scale(scale: float) -> Tuple[int, int]:

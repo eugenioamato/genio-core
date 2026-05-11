@@ -4,9 +4,9 @@ from typing import Generic
 
 import torch
 
-from ltx_core.loader.fuse_loras import apply_loras
-from ltx_core.loader.module_ops import ModuleOps
-from ltx_core.loader.primitives import (
+from genio_core.loader.fuse_loras import apply_loras
+from genio_core.loader.module_ops import ModuleOps
+from genio_core.loader.primitives import (
     LoRAAdaptableProtocol,
     LoraPathStrengthAndSDOps,
     LoraStateDictWithStrength,
@@ -14,10 +14,10 @@ from ltx_core.loader.primitives import (
     StateDict,
     StateDictLoader,
 )
-from ltx_core.loader.registry import DummyRegistry, Registry
-from ltx_core.loader.sd_ops import SDOps
-from ltx_core.loader.sft_loader import SafetensorsModelStateDictLoader
-from ltx_core.model.model_protocol import ModelConfigurator, ModelType
+from genio_core.loader.registry import DummyRegistry, Registry
+from genio_core.loader.sd_ops import SDOps
+from genio_core.loader.sft_loader import SafetensorsModelStateDictLoader
+from genio_core.model.model_protocol import ModelConfigurator, ModelType
 
 logger: logging.Logger = logging.getLogger(__name__)
 

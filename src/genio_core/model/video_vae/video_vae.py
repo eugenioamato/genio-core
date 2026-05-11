@@ -5,15 +5,15 @@ import torch
 from einops import rearrange
 from torch import nn
 
-from ltx_core.model.common.normalization import PixelNorm
-from ltx_core.model.transformer.timestep_embedding import PixArtAlphaCombinedTimestepSizeEmbeddings
-from ltx_core.model.video_vae.convolution import make_conv_nd
-from ltx_core.model.video_vae.enums import LogVarianceType, NormLayerType, PaddingModeType
-from ltx_core.model.video_vae.ops import PerChannelStatistics, patchify, unpatchify
-from ltx_core.model.video_vae.resnet import ResnetBlock3D, UNetMidBlock3D
-from ltx_core.model.video_vae.sampling import DepthToSpaceUpsample, SpaceToDepthDownsample
-from ltx_core.model.video_vae.tiling import TilingConfig
-from ltx_core.tiling import (
+from genio_core.model.common.normalization import PixelNorm
+from genio_core.model.transformer.timestep_embedding import PixArtAlphaCombinedTimestepSizeEmbeddings
+from genio_core.model.video_vae.convolution import make_conv_nd
+from genio_core.model.video_vae.enums import LogVarianceType, NormLayerType, PaddingModeType
+from genio_core.model.video_vae.ops import PerChannelStatistics, patchify, unpatchify
+from genio_core.model.video_vae.resnet import ResnetBlock3D, UNetMidBlock3D
+from genio_core.model.video_vae.sampling import DepthToSpaceUpsample, SpaceToDepthDownsample
+from genio_core.model.video_vae.tiling import TilingConfig
+from genio_core.tiling import (
     DEFAULT_MAPPING_OPERATION,
     DEFAULT_SPLIT_OPERATION,
     DimensionIntervals,
@@ -24,13 +24,13 @@ from ltx_core.tiling import (
     create_tiles,
     split_temporal,
 )
-from ltx_core.tiling import (
+from genio_core.tiling import (
     split_by_size as split_in_spatial,
 )
-from ltx_core.tiling import (
+from genio_core.tiling import (
     split_temporal_causal as split_in_temporal,
 )
-from ltx_core.types import VIDEO_SCALE_FACTORS, SpatioTemporalScaleFactors, VideoLatentShape
+from genio_core.types import VIDEO_SCALE_FACTORS, SpatioTemporalScaleFactors, VideoLatentShape
 
 logger: logging.Logger = logging.getLogger(__name__)
 

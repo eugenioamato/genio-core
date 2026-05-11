@@ -4,9 +4,9 @@ from pathlib import Path
 import torch
 from transformers import AutoImageProcessor, Gemma3ForConditionalGeneration, Gemma3Processor
 
-from ltx_core.loader.module_ops import ModuleOps
-from ltx_core.text_encoders.gemma.tokenizer import LTXVGemmaTokenizer
-from ltx_core.utils import find_matching_file
+from genio_core.loader.module_ops import ModuleOps
+from genio_core.text_encoders.gemma.tokenizer import LTXVGemmaTokenizer
+from genio_core.utils import find_matching_file
 
 
 class GemmaTextEncoder(torch.nn.Module):

@@ -2,7 +2,7 @@ from typing import Protocol, Tuple
 
 import torch
 
-from ltx_core.types import AudioLatentShape, VideoLatentShape
+from genio_core.types import AudioLatentShape, VideoLatentShape
 
 
 class Patchifier(Protocol):

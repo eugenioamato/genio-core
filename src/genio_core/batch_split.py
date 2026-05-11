@@ -6,7 +6,7 @@ The adapter is transparent — it has the same ``forward`` signature as
 ``X0Model`` and proxies attribute access to the wrapped model.
 Example
 -------
->>> from ltx_core.batch_split import BatchSplitAdapter
+>>> from genio_core.batch_split import BatchSplitAdapter
 >>> adapter = BatchSplitAdapter(model, max_batch_size=1)
 >>> # Receives B=4, runs 4xB=1 internally, returns B=4
 >>> denoised_video, denoised_audio = adapter(video=v_b4, audio=a_b4, perturbations=ptb)
@@ -19,8 +19,8 @@ from typing import Any
 import torch
 from torch import nn
 
-from ltx_core.guidance.perturbations import BatchedPerturbationConfig
-from ltx_core.model.transformer.modality import Modality
+from genio_core.guidance.perturbations import BatchedPerturbationConfig
+from genio_core.model.transformer.modality import Modality
 
 
 def _split_perturbations(config: BatchedPerturbationConfig, sizes: list[int]) -> list[BatchedPerturbationConfig]:

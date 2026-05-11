@@ -5,7 +5,7 @@ import numpy
 import scipy
 import torch
 
-from ltx_core.components.protocols import SchedulerProtocol
+from genio_core.components.protocols import SchedulerProtocol
 
 BASE_SHIFT_ANCHOR = 1024
 MAX_SHIFT_ANCHOR = 4096

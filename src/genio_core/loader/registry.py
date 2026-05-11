@@ -4,8 +4,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Protocol
 
-from ltx_core.loader.primitives import StateDict
-from ltx_core.loader.sd_ops import SDOps
+from genio_core.loader.primitives import StateDict
+from genio_core.loader.sd_ops import SDOps
 
 
 class Registry(Protocol):

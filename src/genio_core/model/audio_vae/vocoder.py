@@ -6,7 +6,7 @@ import torch
 import torch.nn.functional as F
 from torch import nn
 
-from ltx_core.model.audio_vae.resnet import LRELU_SLOPE, ResBlock1
+from genio_core.model.audio_vae.resnet import LRELU_SLOPE, ResBlock1
 
 
 def get_padding(kernel_size: int, dilation: int = 1) -> int:

@@ -1,9 +1,9 @@
 import torch
 
-from ltx_core.conditioning.exceptions import ConditioningError
-from ltx_core.conditioning.item import ConditioningItem
-from ltx_core.tools import LatentTools
-from ltx_core.types import LatentState
+from genio_core.conditioning.exceptions import ConditioningError
+from genio_core.conditioning.item import ConditioningItem
+from genio_core.tools import LatentTools
+from genio_core.types import LatentState
 
 
 class VideoConditionByLatentIndex(ConditioningItem):

@@ -3,7 +3,7 @@ from typing import Protocol
 
 import torch
 
-from ltx_core.types import LatentState
+from genio_core.types import LatentState
 
 
 class Noiser(Protocol):

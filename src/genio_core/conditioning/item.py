@@ -1,7 +1,7 @@
 from typing import Protocol
 
-from ltx_core.tools import LatentTools
-from ltx_core.types import LatentState
+from genio_core.tools import LatentTools
+from genio_core.types import LatentState
 
 
 class ConditioningItem(Protocol):

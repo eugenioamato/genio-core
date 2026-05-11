@@ -3,9 +3,9 @@ from typing import Callable
 import torch
 from torch import nn
 
-from ltx_core.loader.module_ops import ModuleOps
-from ltx_core.loader.sd_ops import KeyValueOperationResult, SDOps
-from ltx_core.model.transformer import LTXModel
+from genio_core.loader.module_ops import ModuleOps
+from genio_core.loader.sd_ops import KeyValueOperationResult, SDOps
+from genio_core.model.transformer import LTXModel
 
 
 class FP8Linear(nn.Module):

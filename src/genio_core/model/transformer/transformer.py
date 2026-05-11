@@ -2,13 +2,13 @@ from dataclasses import dataclass, replace
 
 import torch
 
-from ltx_core.guidance.perturbations import BatchedPerturbationConfig, PerturbationType
-from ltx_core.model.transformer.adaln import adaln_embedding_coefficient
-from ltx_core.model.transformer.attention import Attention, AttentionCallable, AttentionFunction
-from ltx_core.model.transformer.feed_forward import FeedForward
-from ltx_core.model.transformer.rope import LTXRopeType
-from ltx_core.model.transformer.transformer_args import TransformerArgs
-from ltx_core.utils import rms_norm
+from genio_core.guidance.perturbations import BatchedPerturbationConfig, PerturbationType
+from genio_core.model.transformer.adaln import adaln_embedding_coefficient
+from genio_core.model.transformer.attention import Attention, AttentionCallable, AttentionFunction
+from genio_core.model.transformer.feed_forward import FeedForward
+from genio_core.model.transformer.rope import LTXRopeType
+from genio_core.model.transformer.transformer_args import TransformerArgs
+from genio_core.utils import rms_norm
 
 
 @dataclass

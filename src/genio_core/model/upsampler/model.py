@@ -1,10 +1,10 @@
 import torch
 from einops import rearrange
 
-from ltx_core.model.upsampler.pixel_shuffle import PixelShuffleND
-from ltx_core.model.upsampler.res_block import ResBlock
-from ltx_core.model.upsampler.spatial_rational_resampler import SpatialRationalResampler
-from ltx_core.model.video_vae import VideoEncoder
+from genio_core.model.upsampler.pixel_shuffle import PixelShuffleND
+from genio_core.model.upsampler.res_block import ResBlock
+from genio_core.model.upsampler.spatial_rational_resampler import SpatialRationalResampler
+from genio_core.model.video_vae import VideoEncoder
 
 
 class LatentUpsampler(torch.nn.Module):

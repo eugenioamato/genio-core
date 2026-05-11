@@ -2,9 +2,9 @@ from collections.abc import Iterator
 
 import torch
 
-from ltx_core.loader.primitives import LoraStateDictWithStrength, StateDict
-from ltx_core.quantization.fp8_cast import _fused_add_round_launch
-from ltx_core.quantization.fp8_scaled_mm import quantize_weight_to_fp8_per_tensor
+from genio_core.loader.primitives import LoraStateDictWithStrength, StateDict
+from genio_core.quantization.fp8_cast import _fused_add_round_launch
+from genio_core.quantization.fp8_scaled_mm import quantize_weight_to_fp8_per_tensor
 
 
 def _get_device() -> torch.device:

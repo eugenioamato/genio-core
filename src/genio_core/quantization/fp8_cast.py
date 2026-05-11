@@ -1,8 +1,8 @@
 import torch
 
-from ltx_core.loader.module_ops import ModuleOps
-from ltx_core.loader.sd_ops import KeyValueOperationResult, SDOps
-from ltx_core.model.transformer.model import LTXModel
+from genio_core.loader.module_ops import ModuleOps
+from genio_core.loader.sd_ops import KeyValueOperationResult, SDOps
+from genio_core.model.transformer.model import LTXModel
 
 BLOCK_SIZE = 1024
 
@@ -11,7 +11,7 @@ def _fused_add_round_launch(target_weight: torch.Tensor, original_weight: torch.
     # Lazy import triton - only available on CUDA platforms
     import triton  # noqa: PLC0415
 
-    from ltx_core.loader.kernels import fused_add_round_kernel  # noqa: PLC0415
+    from genio_core.loader.kernels import fused_add_round_kernel  # noqa: PLC0415
 
     if original_weight.dtype == torch.float8_e4m3fn:
         exponent_bits, mantissa_bits, exponent_bias = 4, 3, 7

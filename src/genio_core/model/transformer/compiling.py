@@ -1,8 +1,8 @@
 import torch
 
-from ltx_core.loader.module_ops import ModuleOps
-from ltx_core.loader.sd_ops import SDOps
-from ltx_core.model.transformer.model import LTXModel
+from genio_core.loader.module_ops import ModuleOps
+from genio_core.loader.sd_ops import SDOps
+from genio_core.model.transformer.model import LTXModel
 
 
 def compile_transformer(model: LTXModel) -> LTXModel:

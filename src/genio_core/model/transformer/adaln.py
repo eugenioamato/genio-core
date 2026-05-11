@@ -2,7 +2,7 @@ from typing import Optional, Tuple
 
 import torch
 
-from ltx_core.model.transformer.timestep_embedding import PixArtAlphaCombinedTimestepSizeEmbeddings
+from genio_core.model.transformer.timestep_embedding import PixArtAlphaCombinedTimestepSizeEmbeddings
 
 # Number of AdaLN modulation parameters per transformer block.
 # Base: 2 params (shift + scale) x 3 norms (self-attn, feed-forward, output).

@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 
-from ltx_core.components.patchifiers import get_pixel_coords
-from ltx_core.conditioning.item import ConditioningItem
-from ltx_core.tools import LatentTools, SpatioTemporalScaleFactors
-from ltx_core.types import AudioLatentShape, LatentState, VideoLatentShape
+from genio_core.components.patchifiers import get_pixel_coords
+from genio_core.conditioning.item import ConditioningItem
+from genio_core.tools import LatentTools, SpatioTemporalScaleFactors
+from genio_core.types import AudioLatentShape, LatentState, VideoLatentShape
 
 
 @dataclass(frozen=True)

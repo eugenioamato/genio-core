@@ -4,15 +4,15 @@ from typing import Protocol
 import torch
 from torch._prims_common import DeviceLikeType
 
-from ltx_core.components.patchifiers import (
+from genio_core.components.patchifiers import (
     AudioLatentShape,
     AudioPatchifier,
     VideoLatentPatchifier,
     VideoLatentShape,
     get_pixel_coords,
 )
-from ltx_core.components.protocols import Patchifier
-from ltx_core.types import LatentState, SpatioTemporalScaleFactors
+from genio_core.components.protocols import Patchifier
+from genio_core.types import LatentState, SpatioTemporalScaleFactors
 
 DEFAULT_SCALE_FACTORS = SpatioTemporalScaleFactors.default()
 

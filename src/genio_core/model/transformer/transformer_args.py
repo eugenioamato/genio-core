@@ -2,9 +2,9 @@ from dataclasses import dataclass, replace
 
 import torch
 
-from ltx_core.model.transformer.adaln import AdaLayerNormSingle
-from ltx_core.model.transformer.modality import Modality
-from ltx_core.model.transformer.rope import (
+from genio_core.model.transformer.adaln import AdaLayerNormSingle
+from genio_core.model.transformer.modality import Modality
+from genio_core.model.transformer.rope import (
     LTXRopeType,
     generate_freq_grid_np,
     generate_freq_grid_pytorch,

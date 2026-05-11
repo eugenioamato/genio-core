@@ -5,7 +5,7 @@ from einops import rearrange
 from torch import nn
 from torch.nn import functional as F
 
-from ltx_core.model.video_vae.enums import PaddingModeType
+from genio_core.model.video_vae.enums import PaddingModeType
 
 
 def make_conv_nd(  # noqa: PLR0913

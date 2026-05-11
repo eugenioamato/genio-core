@@ -1,8 +1,8 @@
 """Conditioning utilities: latent state, tools, and conditioning types."""
 
-from ltx_core.conditioning.exceptions import ConditioningError
-from ltx_core.conditioning.item import ConditioningItem
-from ltx_core.conditioning.types import (
+from genio_core.conditioning.exceptions import ConditioningError
+from genio_core.conditioning.item import ConditioningItem
+from genio_core.conditioning.types import (
     ConditioningItemAttentionStrengthWrapper,
     VideoConditionByKeyframeIndex,
     VideoConditionByLatentIndex,

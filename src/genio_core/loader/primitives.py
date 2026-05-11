@@ -5,12 +5,12 @@ from typing import TYPE_CHECKING, NamedTuple, Protocol
 
 import torch
 
-from ltx_core.loader.module_ops import ModuleOps
-from ltx_core.loader.sd_ops import SDOps
-from ltx_core.model.model_protocol import ModelType
+from genio_core.loader.module_ops import ModuleOps
+from genio_core.loader.sd_ops import SDOps
+from genio_core.model.model_protocol import ModelType
 
 if TYPE_CHECKING:
-    from ltx_core.loader.registry import Registry
+    from genio_core.loader.registry import Registry
 
 
 @dataclass(frozen=True)

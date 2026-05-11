@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 
 import torch
 
-from ltx_core.components.protocols import GuiderProtocol
+from genio_core.components.protocols import GuiderProtocol
 
 
 @dataclass(frozen=True)

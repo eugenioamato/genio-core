@@ -1,13 +1,13 @@
 import torch
 
-from ltx_core.loader.sd_ops import KeyValueOperationResult, SDOps
-from ltx_core.model.audio_vae.attention import AttentionType
-from ltx_core.model.audio_vae.audio_vae import AudioDecoder, AudioEncoder
-from ltx_core.model.audio_vae.causality_axis import CausalityAxis
-from ltx_core.model.audio_vae.vocoder import MelSTFT, Vocoder, VocoderWithBWE
-from ltx_core.model.common.normalization import NormType
-from ltx_core.model.model_protocol import ModelConfigurator
-from ltx_core.utils import check_config_value
+from genio_core.loader.sd_ops import KeyValueOperationResult, SDOps
+from genio_core.model.audio_vae.attention import AttentionType
+from genio_core.model.audio_vae.audio_vae import AudioDecoder, AudioEncoder
+from genio_core.model.audio_vae.causality_axis import CausalityAxis
+from genio_core.model.audio_vae.vocoder import MelSTFT, Vocoder, VocoderWithBWE
+from genio_core.model.common.normalization import NormType
+from genio_core.model.model_protocol import ModelConfigurator
+from genio_core.utils import check_config_value
 
 
 def _vocoder_from_config(

@@ -3,17 +3,17 @@ from typing import Set, Tuple
 import torch
 import torch.nn.functional as F
 
-from ltx_core.components.patchifiers import AudioPatchifier
-from ltx_core.model.audio_vae.attention import AttentionType, make_attn
-from ltx_core.model.audio_vae.causal_conv_2d import make_conv2d
-from ltx_core.model.audio_vae.causality_axis import CausalityAxis
-from ltx_core.model.audio_vae.downsample import build_downsampling_path
-from ltx_core.model.audio_vae.ops import AudioProcessor, PerChannelStatistics
-from ltx_core.model.audio_vae.resnet import ResnetBlock
-from ltx_core.model.audio_vae.upsample import build_upsampling_path
-from ltx_core.model.audio_vae.vocoder import Vocoder
-from ltx_core.model.common.normalization import NormType, build_normalization_layer
-from ltx_core.types import Audio, AudioLatentShape
+from genio_core.components.patchifiers import AudioPatchifier
+from genio_core.model.audio_vae.attention import AttentionType, make_attn
+from genio_core.model.audio_vae.causal_conv_2d import make_conv2d
+from genio_core.model.audio_vae.causality_axis import CausalityAxis
+from genio_core.model.audio_vae.downsample import build_downsampling_path
+from genio_core.model.audio_vae.ops import AudioProcessor, PerChannelStatistics
+from genio_core.model.audio_vae.resnet import ResnetBlock
+from genio_core.model.audio_vae.upsample import build_upsampling_path
+from genio_core.model.audio_vae.vocoder import Vocoder
+from genio_core.model.common.normalization import NormType, build_normalization_layer
+from genio_core.types import Audio, AudioLatentShape
 
 LATENT_DOWNSAMPLE_FACTOR = 4
 

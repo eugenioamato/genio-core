@@ -1,7 +1,7 @@
-from ltx_core.loader.sd_ops import SDOps
-from ltx_core.model.model_protocol import ModelConfigurator
-from ltx_core.model.video_vae.enums import LogVarianceType, NormLayerType, PaddingModeType
-from ltx_core.model.video_vae.video_vae import VideoDecoder, VideoEncoder
+from genio_core.loader.sd_ops import SDOps
+from genio_core.model.model_protocol import ModelConfigurator
+from genio_core.model.video_vae.enums import LogVarianceType, NormLayerType, PaddingModeType
+from genio_core.model.video_vae.video_vae import VideoDecoder, VideoEncoder
 
 
 class VideoEncoderConfigurator(ModelConfigurator[VideoEncoder]):
